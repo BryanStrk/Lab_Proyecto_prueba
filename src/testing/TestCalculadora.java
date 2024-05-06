@@ -1,5 +1,14 @@
 package testing;
+import dao.CalculadoraDao;
+import dao.CalculadoraDaoImpl;
 
 public class TestCalculadora {
-
+	public static void main(String[] args) {
+		CalculadoraDao cdao = new CalculadoraDaoImpl();
+		System.out.println(cdao.sumar(7, 8));
+		System.out.println(cdao.restar(2, 2));
+		System.out.println(cdao.multiplicar(5, 5));
+		System.out.println(cdao.dividir(17, 8));
+		System.out.println(cdao.resto(17, 14));
+	}
 }
